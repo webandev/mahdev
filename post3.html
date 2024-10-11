@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+ <html lang=en>
+     <head> 
+         <meta charset=UTF-8> 
+          <meta name=viewport content="width=device-width, initial-scale=1.0"> 
+           <meta name=description content=A comprehensive article about Intents in Android development.> 
+            <title>Understanding Intents in Android</title>
+              <style>  
+              body {  
+                font-family: Arial, sans-serif;
+                  margin: 20px;
+                    line-height: 1.6; 
+                     }  header { 
+                         text-align: center;
+                           margin-bottom: 20px; 
+                            }  img { 
+                                 max-width: 100%;
+                                   height: auto;  
+                                   }  h1, h2, h3 { 
+                                     color: #333;
+                                       }  .content { 
+                                         max-width: 800px;
+                                           margin: auto; 
+                                            }  .toc { 
+                                                 background: #f4f4f4; 
+                                                  padding: 10px;  
+                                                  margin: 20px 0;
+                                                    border-radius: 5px; 
+                                                     }  .toc ul {  list-style: none;
+                                                       padding: 0; 
+                                                        }  .toc ul li { 
+                                                             margin: 5px 0;
+                                                               }  
+                                                               .toc a {  text-decoration: none; 
+                                                                color: #007BFF;
+                                                                  }  .toc a:hover {  text-decoration: underline; 
+                                                                   } 
+                                                                    </style>
+                                                                     </head>
+                                                                      <body>
+
+    <header>
+          <h1>Understanding Intents in Android</h1>
+            <p>Published on October 6, 2024</p>
+         </header>
+    
+    <div class=content> 
+         <div class=toc> 
+             <h2>Table of Contents</h2>
+               <ul>
+                 <li><a href=#introduction>1. Introduction</a></li>  
+                 <li><a href=#types>2. Types of Intents</a></li>
+                   <li><a href=#usage>3. Using Intents</a></li> 
+                    <li><a href=#common-mistakes>4. Common Intent Mistakes</a></li>
+                      <li><a href=#conclusion>5. Conclusion</a></li> 
+                     </ul>
+                      </div>
+    
+     <img src="blog-2.jpeg" width="800" height="400" alt=Android Development Image>
+    
+    
+     <h2 id=introduction>1. Introduction</h2>
+       <p>In Android development, Intents are a fundamental concept that facilitate communication between different components of an application. They are used to start activities, services, and deliver broadcasts...</p>
+    
+    <h2 id=types>2. Types of Intents</h2>  
+    <p>There are two main types of Intents: explicit and implicit. Explicit Intents specify the target component directly, while implicit Intents declare a general action to be performed, allowing the system to find the appropriate component...</p>
+    
+    <h2 id=usage>3. Using Intents</h2>
+    <p>To use Intents, developers create an Intent object, set the desired action or component, and then call methods like <code>startActivity()</code> for activities or <code>startService()</code> for services. Additionally, data can be passed using extras...</p>
+    
+     <h2 id=common-mistakes>4.Common Intent Mistakes</h2>
+       <p>Common mistakes include failing to define the correct action for implicit Intents, neglecting to check for null values in extras, and not handling the response properly when expecting results...</p>
+    
+     <h2 id=conclusion>5. Conclusion</h2> 
+     <p>Understanding Intents is crucial for effective Android development. By mastering their usage and avoiding common pitfalls, developers can enhance the interactivity and functionality of their applications...</p> </div>
+    
+    <script>  document.querySelectorAll('.toc a').forEach(anchor => {  anchor.addEventListener('click', function(e) {  e.preventDefault();  document.querySelector(this.getAttribute('href')).scrollIntoView({  behavior: 'smooth'  });  });  });
+     </script>
+    
+    </body>
+     </html>
+
+
+
+
+     

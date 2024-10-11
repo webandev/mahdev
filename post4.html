@@ -1,0 +1,94 @@
+
+    <!DOCTYPE html>
+     <html lang=en>
+         <head>  
+            <meta charset=UTF-8> 
+             <meta name=viewport content="width=device-width, initial-scale=1.0"> 
+              <meta name=description content=A comprehensive article about HTML and its fundamental concepts.>  
+              <title>Understanding HTML</title>
+                <style> 
+                 body { 
+                     font-family: Arial, sans-serif;
+                       margin: 20px;  line-height: 1.6;
+                         }  
+                         header {  
+                            text-align: center;
+                              margin-bottom: 20px; 
+                               }  
+                               img { 
+                                 max-width: 100%; 
+                                height: auto;  
+                                }  
+                                h1, h2, h3 {  
+                                    color: #333; 
+                                     } 
+                                      .content { 
+                                         max-width: 800px; 
+                                          margin: auto; 
+                                           }  
+                                           .toc {  
+                                            background: #f4f4f4;
+                                              padding: 10px;
+                                                margin: 20px 0; 
+                                                 border-radius: 5px;
+                                                   } 
+                                                    .toc ul {
+                                                          list-style: none; 
+                                                           padding: 0;
+                                                             }
+                                                               .toc ul li { 
+                                                                 margin: 5px 0; 
+                                                                  }  
+                                                                  .toc a {
+                                                                      text-decoration: none;
+                                                                        color: #007BFF;
+                                                                          } 
+                                                                           .toc a:hover {  
+                                                                            text-decoration: underline; 
+                                                                             }  
+                                                                             </style>
+                                                                              </head>
+                                                                               <body>
+
+                                                                              
+
+    <header> 
+         <h1>Understanding HTML</h1>
+           <p>Published on October 6, 2024</p> 
+        </header>
+    
+    <div class=content>
+          <div class=toc>
+              <h2>Table of Contents</h2>  
+              <ul> 
+                 <li><a href=#introduction>1. Introduction</a></li>  
+                 <li><a href=#structure>2. Basic Structure of an HTML Document</a></li> 
+                  <li><a href=#elements>3. Common HTML Elements</a></li>  
+                  <li><a href=#best-practices>4. HTML Best Practices</a></li>
+                    <li><a href=#conclusion>5. Conclusion</a></li>  
+                </ul>  
+            </div>
+       
+    
+     <img src="blog-4.jpeg" width="800" height="400" alt="HTML Image">
+    
+   <h2 id=introduction>1. Introduction</h2>  
+   <p>HTML (Hypertext Markup Language) is the standard language for creating web pages. It structures the content and is fundamental for web development, enabling the display of text, images, and links...</p>
+    
+   <h2 id=structure>2. Basic Structure of an HTML Document</h2>
+     <p>An HTML document begins with a declaration followed by the <code>&amp;lt;html&amp;gt;</code> tag, containing <code>&amp;lt;head&amp;gt;</code> and <code>&amp;lt;body&amp;gt;</code> sections. The head contains metadata, while the body holds the content displayed on the webpage...</p>
+    
+   <h2 id=elements>3. Common HTML Elements</h2>
+     <p>HTML consists of various elements such as headings (<code>&amp;lt;h1&amp;gt; - &amp;lt;h6&amp;gt;</code>), paragraphs (<code>&amp;lt;p&amp;gt;</code>), links (<code>&amp;lt;a&amp;gt;</code>), and images (<code>&amp;lt;img&amp;gt;</code>). These elements can be nested and combined to create complex layouts...</p>
+    
+    <h2 id=best-practices>4. HTML Best Practices</h2>
+      <p>To ensure accessibility and SEO, use semantic HTML tags, validate your code, and maintain a clear hierarchy with headings. Commenting your code can also improve maintainability...</p>
+    
+   <h2 id=conclusion>5. Conclusion</h2> 
+    <p>HTML is the backbone of web development. By understanding its structure and best practices, developers can create well-structured and accessible web pages that enhance user experience...</p> 
+</div>
+    
+   <script>  document.querySelectorAll('.toc a').forEach(anchor => {  anchor.addEventListener('click', function(e) {  e.preventDefault();  document.querySelector(this.getAttribute('href')).scrollIntoView({  behavior: 'smooth'  });  });  }); </script>
+    
+   </body> 
+   </html>
