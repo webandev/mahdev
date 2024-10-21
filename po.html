@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+            <link rel=stylesheet" href="ooo.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#web-apps">Web Apps</a></li>
+                <li><a href="#web-ui">Web UI</a></li>
+                <li><a href="#simple-games">Simple Web Games</a></li>
+                <li><a href="#landing-pages">Landing Pages</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="web-apps">
+            <h2>Web Apps</h2>
+            <div class="project-card">
+                <h3>Recipe Web App</h3>
+                <p>Simple Recipe Web App</p>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="r1.png" alt="Project Image 1"></div>
+                        <div class="slide"><img src="r2.png" alt="Project Image 2"></div>
+                        <div class="slide"><img src="r3.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r4.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r5.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r6.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r7.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r8.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r9.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r10.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r11.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r12.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r13.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r14.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r15.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r16.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r17.png" alt="Project Image 3"></div>
+                         <div class="slide"><img src="r18.png" alt="Project Image 3"></div>
+                    </div>
+                    <div class="controls">
+                        <button class="control" onclick="prevSlide(this)">❮</button>
+                        <button class="control" onclick="nextSlide(this)">❯</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="web-ui">
+            <h2>Web UI</h2>
+            <div class="project-card">
+                <h3>Weather Web App UI</h3>
+                <p>This is simple of the weather web app user interface project.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="w1.png" alt="Project Image 1"></div>
+                        <div class="slide"><img src="w2.png" alt="Project Image 2"></div>
+                       
+                    </div>
+                    <div class="controls">
+                        <button class="control" onclick="prevSlide(this)">❮</button>
+                        <button class="control" onclick="nextSlide(this)">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="simple-games">
+            <h2>Simple Web Games</h2>
+            <div class="project-card">
+                <h3>Fibonacci</h3>
+                <p>This is Fibonacci sequence in math.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="f1.png" alt="Game Image 1"></div>
+                        <div class="slide"><img src="f2.png" alt="Game Image 2"></div>
+                         <div class="slide"><img src="f3.png" alt="Game Image 2"></div>
+                    </div>
+                    <div class="controls">
+                        <button class="control" onclick="prevSlide(this)">❮</button>
+                        <button class="control" onclick="nextSlide(this)">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="landing-pages">
+            <h2>Landing Pages</h2>
+            <div class="project-card">
+                <h3>Travel Landing Page</h3>
+                <p>This is Travel landing page with nice design and user interface.</p>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="p.png" alt="Landing Image 1"></div>
+                       
+                    </div>
+                    <div class="controls">
+                        <button class="control" onclick="prevSlide(this)">❮</button>
+                        <button class="control" onclick="nextSlide(this)">❯</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3>Simple Food landing page</h3>
+                <p>This is a simple Food landing page with nice design and colors.</p>
+                <div class="slider">
+                    <div class="slides">
+                        
+                        <div class="slide"><img src="s.png" alt="Landing Image 2"></div>
+                    </div>
+                    <div class="controls">
+                        <button class="control" onclick="prevSlide(this)">❮</button>
+                        <button class="control" onclick="nextSlide(this)">❯</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script>
+        function nextSlide(control) {
+            const slides = control.parentElement.parentElement.querySelector('.slides');
+            slides.appendChild(slides.firstElementChild);
+        }
+
+        function prevSlide(control) {
+            const slides = control.parentElement.parentElement.querySelector('.slides');
+            slides.insertBefore(slides.lastElementChild, slides.firstElementChild);
+        }
+    </script>
+</body>
+</html>
+
